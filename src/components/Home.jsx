@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -17,9 +18,11 @@ const Home = () => {
         Our website also offers facts and resources to make your everyday life a
         little greener.{" "}
       </p>
-      <div className="home__button" type="button">
-        Go <span>GREEN</span> !
-      </div>
+      <Link to="/choice">
+        <div className="home__button" type="button">
+          Go <span>GREEN</span> !
+        </div>
+      </Link>
     </div>
   );
 };

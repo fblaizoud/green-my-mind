@@ -1,0 +1,23 @@
+.choicepage {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  a {
+    text-decoration: none;
+  }
+  &__links {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-family: "Amatic SC";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 140px;
+    line-height: 177px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 4px 4px 8px #000000;
+  }
+}
