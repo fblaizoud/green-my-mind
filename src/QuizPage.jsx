@@ -1,5 +1,3 @@
-import "./QuizPage.scss";
-
 const QuizPage = () => {
   return <div />;
 };
