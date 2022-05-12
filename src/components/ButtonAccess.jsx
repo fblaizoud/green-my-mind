@@ -1,7 +1,7 @@
-import "./ButtonAccess.scss"
+import "./ButtonAccess.scss";
 
 const ButtonAccess = () => {
-  return <div></div>;
+  return <div />;
 };
 
 export default ButtonAccess;

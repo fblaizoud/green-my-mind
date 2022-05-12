@@ -1,7 +1,7 @@
-import "./GreenfoPage.scss"
+import "./GreenfoPage.scss";
 
 const GreenfoPage = () => {
-    return <div></div>;
-  };
-  
-  export default GreenfoPage;
+  return <div />;
+};
+
+export default GreenfoPage;

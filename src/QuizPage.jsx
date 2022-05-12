@@ -1,7 +1,7 @@
-import "./QuizPage.scss"
+import "./QuizPage.scss";
 
 const QuizPage = () => {
-    return <div></div>;
-  };
-  
-  export default QuizPage;
+  return <div />;
+};
+
+export default QuizPage;

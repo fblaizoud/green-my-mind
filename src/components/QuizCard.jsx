@@ -1,7 +1,7 @@
-import "./QuizCard.scss"
+import "./QuizCard.scss";
 
 const QuizCard = () => {
-    return <div></div>;
-  };
-  
-  export default QuizCard;
+  return <div />;
+};
+
+export default QuizCard;

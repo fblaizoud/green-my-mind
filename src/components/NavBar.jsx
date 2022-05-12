@@ -1,7 +1,7 @@
-import "./NavBar.scss"
+import "./NavBar.scss";
 
 const NavBar = () => {
-    return <div></div>;
-  };
-  
-  export default NavBar;
+  return <div />;
+};
+
+export default NavBar;

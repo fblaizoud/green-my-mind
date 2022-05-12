@@ -1,7 +1,7 @@
-import "./GreenfoCard.scss"
+import "./GreenfoCard.scss";
 
 const GreenfoCard = () => {
-    return <div></div>;
-  };
-  
-  export default GreenfoCard;
+  return <div />;
+};
+
+export default GreenfoCard;
