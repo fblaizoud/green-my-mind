@@ -5,15 +5,11 @@
 
   &:hover a:not(:hover) {
     filter: grayscale(100%);
-    &::after {
-      background-color: rgba(#000, 0.5);
-    }
   }
 
   a {
     text-decoration: none;
     color: #ffffff;
-    transition: 0.5s;
   }
 
   &__section {
@@ -24,12 +20,13 @@
     font-family: "Amatic SC";
     font-style: normal;
     font-weight: 700;
-    font-size: 140px;
+    font-size: 10vw;
     text-shadow: 4px 4px 8px #000000;
 
     img {
       height: 100%;
       width: 100%;
+      object-fit: cover;
     }
 
     &__links {
