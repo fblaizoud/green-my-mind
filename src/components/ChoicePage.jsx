@@ -1,5 +1,5 @@
 const ChoicePage = () => {
-  return <div></div>;
+  return <div />;
 };
 
 export default ChoicePage;
