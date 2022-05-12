@@ -6,18 +6,18 @@ const ChoicePage = () => {
     <>
       <NavBarWithoutLink />
       <div className="choicepage">
-          <Link to="/greenfo">
+        <Link to="/greenfo">
           <div className="choicepage__section">
             <img src="/public/assets/forest.jpg" alt="forest" />
             <div className="choicepage__section__links">GREENFO</div>
           </div>
-          </Link>
-          <Link to="/greenfo">
+        </Link>
+        <Link to="/greenfo">
           <div className="choicepage__section">
             <img src="/public/assets/thinking.jpg" alt="thinking" />
             <div className="choicepage__section__links">QUIZZ</div>
           </div>
-          </Link>
+        </Link>
       </div>
     </>
   );
