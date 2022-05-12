@@ -1,6 +1,6 @@
 .greenfoPage {
   display: flex;
-  height: 100vh;
+  height: calc(100vh - 100px);
   background-image: url("/assets/imgFeuille.jpg");
   flex-direction: column;
   justify-content: flex-start;
