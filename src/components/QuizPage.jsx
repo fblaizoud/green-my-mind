@@ -1,5 +1,12 @@
+import NavBarWithLink from "./NavBarWithLink";
+
 const QuizPage = () => {
-  return <div />;
+  return (
+    <>
+      <NavBarWithLink />
+      <div className="quiz" />
+    </>
+  );
 };
 
 export default QuizPage;
