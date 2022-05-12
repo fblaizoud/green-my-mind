@@ -1,0 +1,17 @@
+.greenfoPage {
+  display: flex;
+  height: 100vh;
+  background-image: url("/assets/imgFeuille.jpg");
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-size: cover;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 4rem;
+    margin-top: 7rem;
+  }
+}
