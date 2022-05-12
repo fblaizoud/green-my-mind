@@ -12,7 +12,7 @@ const GreenfoPage = () => {
             title="Transport"
             image="./assets/imgTransport.jpg"
           />
-          <GreenfoPageButton title="Houses" image="./assets/imgHouse.jpg" />
+          <GreenfoPageButton title="Housing" image="./assets/imgHouse.jpg" />
           <GreenfoPageButton title="Clothing" image="./assets/imgTextil.jpg" />
         </div>
       </div>
