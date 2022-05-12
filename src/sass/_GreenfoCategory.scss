@@ -1,5 +1,9 @@
 .greenfo_transport {
   width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: calc(100vh - 100px);
   background-color: #e8f7e6;
   opacity: 0.3;
@@ -15,6 +19,10 @@
 
 .greenfo_housing {
   width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: calc(100vh - 100px);
   background-color: #e8f7e6;
   opacity: 0.3;
@@ -27,6 +35,10 @@
 
 .greenfo_food {
   width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: calc(100vh - 100px);
   background-color: #e8f7e6;
   opacity: 0.3;
@@ -40,6 +52,10 @@
 
 .greenfo_clothing {
   width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: calc(100vh - 100px);
   background-color: #e8f7e6;
   opacity: 0.3;
@@ -49,4 +65,56 @@
     linear-gradient(90deg, #54f745 4px, #e8f7e6 4px);
   background-size: 200px 200px, 200px 200px, 40px 40px, 40px 40px;
   background-position: -8px -8px, -8px -8px, -4px -4px, -4px -4px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  width: 80%;
+  height: 80%;
+}
+
+.text1 {
+  grid-area: 1 / 1 / 2 / 4;
+  opacity: 1;
+  background-color: white;
+  color: black;
+}
+.graph1 {
+  grid-area: 2 / 1 / 4 / 4;
+  opacity: 1;
+  background-color: white;
+}
+.text2 {
+  grid-area: 1 / 4 / 4 / 5;
+  opacity: 1;
+  background-color: white;
+}
+.graph2 {
+  grid-area: 1 / 5 / 4 / 7;
+  opacity: 1;
+  background-color: white;
+}
+.graph3 {
+  grid-area: 4 / 1 / 7 / 3;
+  opacity: 1;
+  background-color: white;
+}
+.text3 {
+  grid-area: 4 / 3 / 7 / 4;
+  opacity: 1;
+  background-color: white;
+}
+.graph4 {
+  grid-area: 4 / 4 / 6 / 7;
+  opacity: 1;
+  background-color: white;
+}
+.text4 {
+  grid-area: 6 / 4 / 7 / 7;
+  opacity: 1;
+  background-color: white;
 }
