@@ -1,7 +1,6 @@
 import GreenfoPageButton from "./GreenfoPageButton";
 import NavBarWithLink from "./NavBarWithLink";
 
-
 const GreenfoPage = () => {
   return (
     <>
