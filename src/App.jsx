@@ -13,6 +13,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/choice" element={<ChoicePage />} />
         <Route path="/greenfo" element={<GreenfoPage />} />
+        <Route path="/greenfo/:theme" element={<GreenfoPage />} />
         <Route path="/quiz" element={<QuizPage />} />
         <Route path="greenfo/:title" element={<GreenfoCategory />} />
       </Routes>
