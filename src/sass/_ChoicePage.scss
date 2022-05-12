@@ -1,16 +1,16 @@
 .choicepage {
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    align-items: center;
-    a {
-        text-decoration: none;
-    }
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  a {
+    text-decoration: none;
+  }
   &__links {
-      width: 50vw;
-      display: flex;
-      justify-content: center;
-      flex-direction: row;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
     font-family: "Amatic SC";
     font-style: normal;
     font-weight: 700;

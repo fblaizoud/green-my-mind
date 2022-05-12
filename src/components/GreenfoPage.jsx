@@ -4,7 +4,7 @@ const GreenfoPage = () => {
   return (
     <>
       <NavBarWithLink />
-      <div className="greenfo"></div>
+      <div className="greenfo" />
     </>
   );
 };

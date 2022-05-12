@@ -19,9 +19,9 @@ const Home = () => {
         little greener.{" "}
       </p>
       <Link to="/choice">
-      <div className="home__button" type="button">
-        Go <span>GREEN</span> !
-      </div>
+        <div className="home__button" type="button">
+          Go <span>GREEN</span> !
+        </div>
       </Link>
     </div>
   );

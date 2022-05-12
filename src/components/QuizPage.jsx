@@ -4,7 +4,7 @@ const QuizPage = () => {
   return (
     <>
       <NavBarWithLink />
-      <div className="quiz"></div>
+      <div className="quiz" />
     </>
   );
 };
