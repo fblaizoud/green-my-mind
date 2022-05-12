@@ -25,6 +25,9 @@
     letter-spacing: 0.1rem;
     text-shadow: 2px 2px 4px black;
   }
+  a {
+      text-decoration: none;
+  }
   &__button {
     margin-top: 50px;
     width: 10rem;
