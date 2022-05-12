@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 125px;
+  height: 100px;
   width: 100vw;
   background: linear-gradient(
       180deg,
@@ -11,6 +11,7 @@
     ),
     #0fba00;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
   a {
     text-decoration: none;
     color: #ffffff;
@@ -23,8 +24,8 @@
     font-family: "Amatic SC";
     font-style: normal;
     font-weight: 700;
-    font-size: 80px;
-    line-height: 101px;
+    font-size: 50px;
+    line-height: 70px;
     text-align: center;
     color: #ffffff;
     text-shadow: 4px 4px 8px #000000;
