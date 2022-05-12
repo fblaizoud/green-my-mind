@@ -1,0 +1,39 @@
+.choicepage {
+  display: flex;
+  width: 100vw;
+  height: calc(100vh - 100px);
+
+  &:hover a:not(:hover) {
+    filter: grayscale(100%);
+  }
+
+  a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  &__section {
+    z-index: -1;
+    position: relative;
+    height: 100%;
+    display: flex;
+    font-family: "Amatic SC";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10vw;
+    text-shadow: 4px 4px 8px #000000;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    &__links {
+      top: 50vh;
+      left: 15vw;
+      z-index: 20;
+      position: absolute;
+    }
+  }
+}
