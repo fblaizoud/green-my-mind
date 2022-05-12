@@ -1,5 +1,12 @@
+import NavBarWithLink from "./NavBarWithLink";
+
 const GreenfoPage = () => {
-  return <div />;
+  return (
+    <>
+      <NavBarWithLink />
+      <div className="greenfo" />
+    </>
+  );
 };
 
 export default GreenfoPage;
