@@ -1,0 +1,52 @@
+.greenfo_transport {
+  width: 100vw;
+  height: calc(100vh - 100px);
+  background-color: #e8f7e6;
+  opacity: 0.3;
+  background-size: 40px 40px;
+  background-image: repeating-linear-gradient(
+    45deg,
+    #54f745 0,
+    #54f745 4px,
+    #e8f7e6 0,
+    #e8f7e6 50%
+  );
+}
+
+.greenfo_housing {
+  width: 100vw;
+  height: calc(100vh - 100px);
+  background-color: #e8f7e6;
+  opacity: 0.3;
+  background: linear-gradient(135deg, #54f74555 25%, transparent 25%) -40px 0/
+      80px 80px,
+    linear-gradient(225deg, #54f745 25%, transparent 25%) -40px 0/ 80px 80px,
+    linear-gradient(315deg, #54f74555 25%, transparent 25%) 0px 0/ 80px 80px,
+    linear-gradient(45deg, #54f745 25%, #e8f7e6 25%) 0px 0/ 80px 80px;
+}
+
+.greenfo_food {
+  width: 100vw;
+  height: calc(100vh - 100px);
+  background-color: #e8f7e6;
+  opacity: 0.3;
+  background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #e8f7e6 40px
+    ),
+    repeating-linear-gradient(#54f74555, #54f745);
+}
+
+.greenfo_clothing {
+  width: 100vw;
+  height: calc(100vh - 100px);
+  background-color: #e8f7e6;
+  opacity: 0.3;
+  background-image: linear-gradient(#54f745 8px, transparent 8px),
+    linear-gradient(90deg, #54f745 8px, transparent 8px),
+    linear-gradient(#54f745 4px, transparent 4px),
+    linear-gradient(90deg, #54f745 4px, #e8f7e6 4px);
+  background-size: 200px 200px, 200px 200px, 40px 40px, 40px 40px;
+  background-position: -8px -8px, -8px -8px, -4px -4px, -4px -4px;
+}
