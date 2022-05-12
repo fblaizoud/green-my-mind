@@ -12,7 +12,7 @@ const ChoicePage = () => {
             <div className="choicepage__section__links">GREENFO</div>
           </div>
         </Link>
-        <Link to="/greenfo">
+        <Link to="/quiz">
           <div className="choicepage__section">
             <img src="/public/assets/thinking.jpg" alt="thinking" />
             <div className="choicepage__section__links">QUIZZ</div>

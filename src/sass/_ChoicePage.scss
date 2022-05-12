@@ -19,16 +19,14 @@
   &__section {
     z-index: -1;
     position: relative;
-    width: 50vw;
     height: 100%;
     display: flex;
-    justify-content: center;
-    flex-direction: row;
     font-family: "Amatic SC";
     font-style: normal;
     font-weight: 700;
     font-size: 140px;
     text-shadow: 4px 4px 8px #000000;
+
     img {
       height: 100%;
       width: 100%;
