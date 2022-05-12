@@ -1,10 +1,32 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import NavBarWithLink from "./NavBarWithLink";
 import quiz from "../../data/quiz.js";
 import QuizItem from "./QuizItem";
 
 const QuizPage = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [transportScore, setTransportScore] = useState(0);
+  const [foodScore, setFoodScore] = useState(0);
+  const [housingScore, setHousingScore] = useState(0);
+  const [clothingScore, setClothingScore] = useState(0);
+  const [advice, setAdvice] = useState("");
+
+  useEffect(() => {
+    if ((transportScore + foodScore + housingScore + clothingScore) / 4 >= 75) {
+      setAdvice("Congratulations ! Your are a Green Expert ! 🥳");
+    } else if (
+      (transportScore + foodScore + housingScore + clothingScore) / 4 >=
+      50
+    ) {
+      setAdvice("Not bad ! But you can do better, we know it ! 🙃");
+    } else {
+      setAdvice(
+        "You are such not Green ! Go get some colors on the Greenfo Page above ! 😵"
+      );
+    }
+  }, [transportScore, foodScore, housingScore, clothingScore]);
+
+  console.log(advice);
 
   return (
     <>
@@ -27,13 +49,48 @@ const QuizPage = () => {
               .filter((quizItem) => quizItem.id === currentQuestion)
               .map((quizItem) => (
                 <QuizItem
+                  key={quizItem.id}
                   {...quizItem}
                   currentQuestion={currentQuestion}
                   setCurrentQuestion={setCurrentQuestion}
+                  setTransportScore={setTransportScore}
+                  setFoodScore={setFoodScore}
+                  setHousingScore={setHousingScore}
+                  setClothingScore={setClothingScore}
+                  transportScore={transportScore}
+                  foodScore={foodScore}
+                  housingScore={housingScore}
+                  clothingScore={clothingScore}
                 />
               ))}
           {currentQuestion === 17 && (
-            <div className="quizPage__result">Voilà c&apos;est fini !</div>
+            <div className="quizPage__result">
+              <p className="quizPage__result__total">
+                Your Green Score is :{" "}
+                {(transportScore + foodScore + housingScore + clothingScore) /
+                  4}{" "}
+                %
+              </p>
+              <div className="quizPage__result__details">
+                <div className="quizPage__result__details__categories">
+                  <p className="quizPage__result__details__categories__transport">
+                    Transport Score : {transportScore} %
+                  </p>
+                  <p className="quizPage__result__details__categories__food">
+                    Food Score : {foodScore} %
+                  </p>
+                  <p className="quizPage__result__details__categories__housing">
+                    Housing Score : {housingScore} %
+                  </p>
+                  <p className="quizPage__result__details__categories__clothing">
+                    Clothing Score : {clothingScore} %
+                  </p>
+                </div>
+                <div className="quizPage__result__details__advice">
+                  <p>{advice}</p>
+                </div>
+              </div>
+            </div>
           )}
         </div>
       </div>

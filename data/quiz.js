@@ -1,6 +1,7 @@
 const quiz = [
   {
     id: 1,
+    category: "transport",
     question: "Which type of transports do you use every day?",
     answers: [
       {
@@ -19,60 +20,7 @@ const quiz = [
   },
   {
     id: 2,
-    question: "How far is your home from your workplace?",
-    answers: [
-      {
-        id: 1,
-        answer: "I work from home",
-      },
-      {
-        id: 2,
-        answer: "0 - 20km",
-      },
-      {
-        id: 3,
-        answer: "20km+",
-      },
-    ],
-  },
-  {
-    id: 3,
-    question: "How much distance do you travel per week?",
-    answers: [
-      {
-        id: 1,
-        answer: "10-20km",
-      },
-      {
-        id: 2,
-        answer: "20-50km",
-      },
-      {
-        id: 3,
-        answer: "50km+",
-      },
-    ],
-  },
-  {
-    id: 4,
-    question: "How do you travel for long trips?",
-    answers: [
-      {
-        id: 1,
-        answer: "By train",
-      },
-      {
-        id: 2,
-        answer: "By car, I don't travel too far from home",
-      },
-      {
-        id: 3,
-        answer: "By plane",
-      },
-    ],
-  },
-  {
-    id: 5,
+    category: "food",
     question: "How often do you eat meat?",
     answers: [
       {
@@ -90,7 +38,65 @@ const quiz = [
     ],
   },
   {
+    id: 3,
+    category: "transport",
+    question: "How do you travel for long trips?",
+    answers: [
+      {
+        id: 1,
+        answer: "By train",
+      },
+      {
+        id: 2,
+        answer: "By car, I don't travel too far from home",
+      },
+      {
+        id: 3,
+        answer: "By plane",
+      },
+    ],
+  },
+  {
+    id: 4,
+    category: "clothing",
+    question: "Where do you buy clothes?",
+    answers: [
+      {
+        id: 1,
+        answer: "Second hand stores",
+      },
+      {
+        id: 2,
+        answer: "Local shops",
+      },
+      {
+        id: 3,
+        answer: "High street",
+      },
+    ],
+  },
+  {
+    id: 5,
+    category: "housing",
+    question: "Do you generally shut your appliances down at home?",
+    answers: [
+      {
+        id: 1,
+        answer: "Yes",
+      },
+      {
+        id: 2,
+        answer: "No",
+      },
+      {
+        id: 3,
+        answer: "I can't, I'm mining bitcoins",
+      },
+    ],
+  },
+  {
     id: 6,
+    category: "food",
     question: "How often do you eat organic food?",
     answers: [
       {
@@ -109,6 +115,45 @@ const quiz = [
   },
   {
     id: 7,
+    category: "clothing",
+    question: "How often do you buy new clothes?",
+    answers: [
+      {
+        id: 1,
+        answer: "Hardly ever",
+      },
+      {
+        id: 2,
+        answer: "At least once a month",
+      },
+      {
+        id: 3,
+        answer: "As soon as they are worn out",
+      },
+    ],
+  },
+  {
+    id: 8,
+    category: "housing",
+    question: "How do you heat your home?",
+    answers: [
+      {
+        id: 1,
+        answer: "Solar panels",
+      },
+      {
+        id: 2,
+        answer: "Gas",
+      },
+      {
+        id: 3,
+        answer: "Electricity",
+      },
+    ],
+  },
+  {
+    id: 9,
+    category: "food",
     question: "How do you drink your water?",
     answers: [
       {
@@ -126,7 +171,27 @@ const quiz = [
     ],
   },
   {
-    id: 8,
+    id: 10,
+    category: "transport",
+    question: "How far is your home from your workplace?",
+    answers: [
+      {
+        id: 1,
+        answer: "I work from home",
+      },
+      {
+        id: 2,
+        answer: "0 - 20km",
+      },
+      {
+        id: 3,
+        answer: "20km+",
+      },
+    ],
+  },
+  {
+    id: 11,
+    category: "food",
     question:
       "How much of the food you eat is unprocessed, unpackaged or locally grown?",
     answers: [
@@ -145,43 +210,8 @@ const quiz = [
     ],
   },
   {
-    id: 9,
-    question: "How do you heat your home?",
-    answers: [
-      {
-        id: 1,
-        answer: "Solar panels",
-      },
-      {
-        id: 2,
-        answer: "Gas",
-      },
-      {
-        id: 3,
-        answer: "Electricity",
-      },
-    ],
-  },
-  {
-    id: 10,
-    question: "Do you generally shut your appliances down at home?",
-    answers: [
-      {
-        id: 1,
-        answer: "Yes",
-      },
-      {
-        id: 2,
-        answer: "No",
-      },
-      {
-        id: 3,
-        answer: "I can't, I'm mining bitcoins",
-      },
-    ],
-  },
-  {
-    id: 11,
+    id: 12,
+    category: "housing",
     question: "Where do you dispose of your trash?",
     answers: [
       {
@@ -199,7 +229,27 @@ const quiz = [
     ],
   },
   {
-    id: 12,
+    id: 13,
+    category: "transport",
+    question: "How much distance do you travel per week?",
+    answers: [
+      {
+        id: 1,
+        answer: "10-20km",
+      },
+      {
+        id: 2,
+        answer: "20-50km",
+      },
+      {
+        id: 3,
+        answer: "50km+",
+      },
+    ],
+  },
+  {
+    id: 14,
+    category: "housing",
     question: "Which material is your house built with",
     answers: [
       {
@@ -217,25 +267,8 @@ const quiz = [
     ],
   },
   {
-    id: 13,
-    question: "How often do you buy new clothes?",
-    answers: [
-      {
-        id: 1,
-        answer: "Hardly ever",
-      },
-      {
-        id: 2,
-        answer: "At least once a month",
-      },
-      {
-        id: 3,
-        answer: "As soon as they are worn out",
-      },
-    ],
-  },
-  {
-    id: 14,
+    id: 15,
+    category: "clothing",
     question: "How do you dispose of your worn out clothes?",
     answers: [
       {
@@ -253,25 +286,8 @@ const quiz = [
     ],
   },
   {
-    id: 15,
-    question: "Where do you buy clothes?",
-    answers: [
-      {
-        id: 1,
-        answer: "Second hand stores",
-      },
-      {
-        id: 2,
-        answer: "Local shops",
-      },
-      {
-        id: 3,
-        answer: "High street",
-      },
-    ],
-  },
-  {
     id: 16,
+    category: "clothing",
     question: "Which fabrics do you buy?",
     answers: [
       {
