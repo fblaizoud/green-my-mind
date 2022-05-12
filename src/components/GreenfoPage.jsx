@@ -7,13 +7,13 @@ const GreenfoPage = () => {
       <NavBarWithLink />
       <div className="greenfoPage">
         <div className="greenfoPage__grid">
-          <GreenfoPageButton title="Food" image="./assets/imgFood.jpg" />
+          <GreenfoPageButton title="food" image="./assets/imgFood.jpg" />
           <GreenfoPageButton
-            title="Transport"
+            title="transport"
             image="./assets/imgTransport.jpg"
           />
-          <GreenfoPageButton title="Housing" image="./assets/imgHouse.jpg" />
-          <GreenfoPageButton title="Clothing" image="./assets/imgTextil.jpg" />
+          <GreenfoPageButton title="housing" image="./assets/imgHouse.jpg" />
+          <GreenfoPageButton title="clothing" image="./assets/imgTextil.jpg" />
         </div>
       </div>
     </>
