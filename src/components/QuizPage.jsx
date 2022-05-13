@@ -96,7 +96,7 @@ const QuizPage = () => {
                 <div className="quizPage__result__details__advice">
                   <p>{advice}</p>
                   {advice === "Congratulations! You're a Green Expert! 🥳" && (
-                    <div>
+                    <div className="quizPage__result__details__advice__link">
                       You can still donate some €€€{" "}
                       <a href="https://faireundon.wwf.fr/don/~mon-don?ns_ira_cr_arg=IyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyNed87qdfDPF%2B3XnHxbBuio6P%2B87BK5UgPBjhANsxPKWzasnF4R4IjJH7ALzd%2B1l4O%2FIsm%2F0n9JQgx%2BkBekp9Hmn1GDBsuGXs5WTF4s3T4oD9szUsypdqY83tgoViVQIJQ%3D&utm_source=SiteWWF&utm_medium=Homepage&utm_content=CTAHeader&_ga=2.126929545.506041628.1652361385-839367546.1652361385&_gac=1.149806276.1652367043.Cj0KCQjw4PKTBhD8ARIsAHChzRI5npiphgWhvcGkDOJRtqtoZVq-Hh2q5853Qt52ORWBhXzHsi11y7UaAnOPEALw_wcB&_cv=1">
                         here.
@@ -105,7 +105,7 @@ const QuizPage = () => {
                   )}
                   {advice ===
                     "Not bad! But you can do better, we know it! 🙃" && (
-                    <div>
+                    <div className="quizPage__result__details__advice__link">
                       Check out this{" "}
                       <a href="https://www.greenqueen.com.hk/">fine</a> resource
                       for some cool eco-tips.
@@ -113,7 +113,7 @@ const QuizPage = () => {
                   )}
                   {advice ===
                     "You are soooo not Green! Go get some colors on the Greenfo Page! 😵" && (
-                    <div>
+                    <div className="quizPage__result__details__advice__link">
                       <a href="https://www.greenpeace.org/global/">Find out</a>{" "}
                       how you can change your nasty habits.
                     </div>
