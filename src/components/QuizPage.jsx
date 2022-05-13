@@ -30,7 +30,7 @@ const QuizPage = () => {
       setAdvice("Not bad! But you can do better, we know it! 🙃");
     } else {
       setAdvice(
-        "You are soooo not Green! Go get some colors on the Greenfo Page above! 😵"
+        "You are soooo not Green! Go get some colors on the Greenfo Page ! 😵"
       );
     }
   }, [transportScore, foodScore, housingScore, clothingScore]);
