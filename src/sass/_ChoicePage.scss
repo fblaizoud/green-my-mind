@@ -42,10 +42,10 @@
 
 // ! Responsivness
 @media all and (max-width: 600px) {
-  .choicepage {   
+  .choicepage {
     height: calc(100vh - 100px);
-      flex-direction: column;
-      justify-content: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
     &__section {
       img {
         height: calc(50vh - 50px);
