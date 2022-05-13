@@ -202,11 +202,17 @@
 @media all and (max-width: 650px) {
   .container {
     line-height: 1rem;
+    grid-row-gap: 10px;
     div {
       font-size: 2.5vw;
     }
     span {
       font-size: 2.5vw;
+    }
+  }
+  #greenfocat {
+    h1 {
+      font-size: 2.5rem;
     }
   }
 }
