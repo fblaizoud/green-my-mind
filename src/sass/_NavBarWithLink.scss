@@ -34,3 +34,26 @@
     text-shadow: 4px 4px 8px #000000;
   }
 }
+
+// ! Responsivness
+@media all and (max-width: 1000px) {
+  .navbarwithlink {
+    img {
+      transform: scale(0.7);
+    }
+    &__links {
+      display: flex;
+      font-weight: 700;
+      font-size: 6vw;
+    }
+  }
+}
+
+// ! Responsivness
+@media all and (max-width: 800px) {
+  .navbarwithlink {
+    &__links {
+      display: none;
+    }
+  }
+}
