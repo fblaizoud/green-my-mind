@@ -37,3 +37,23 @@
     }
   }
 }
+
+// ! Responsivness
+@media all and (max-width: 1000px) {
+  .choicepage {
+    flex-wrap: wrap;
+    width: 100vw;
+    height: calc(100vh - 100px);
+    &__section {
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      &__links {
+        top: 40%;
+        left: 40%;
+      }
+    }
+  }
+}

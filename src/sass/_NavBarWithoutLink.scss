@@ -12,3 +12,12 @@
     #0fba00;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+// ! Responsivness
+@media all and (max-width: 1000px) {
+  .navbarwithoutlink {
+    a {
+      transform: scale(0.7);
+    }
+  }
+}
