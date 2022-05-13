@@ -114,7 +114,7 @@
   grid-area: 2 / 1 / 4 / 4;
   opacity: 1;
   background-color: rgb(147, 207, 124);
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: bold;
 }
 .text2 {
@@ -134,7 +134,7 @@
   justify-content: center;
   grid-area: 1 / 5 / 4 / 7;
   background-color: rgb(180, 230, 160);
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: bold;
 }
 .graph3 {
@@ -144,7 +144,7 @@
   justify-content: center;
   grid-area: 4 / 1 / 7 / 3;
   background-color: rgb(229, 244, 223);
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: bold;
 }
 .text3 {
@@ -164,7 +164,7 @@
   justify-content: center;
   grid-area: 4 / 4 / 6 / 7;
   background-color: rgb(216, 246, 204);
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: bold;
   span {
     margin-left: 16px;
@@ -180,4 +180,46 @@
   background-color: rgb(216, 246, 204);
 }
 
-// GRAPH
+
+// ! Responsivness
+
+@media all and (max-width: 1000px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    div {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      height: 5vh;
+      font-size: 2vw;
+    }
+    span {
+      font-size: 2vw;
+    }
+  }
+}
+
+@media all and (max-width: 650px) {
+  .container {
+    line-height: 1rem;
+    div {
+      font-size: 2.5vw;
+    }
+    span {
+      font-size: 2.5vw;
+    }
+  }
+}
+
+@media all and (max-width: 450px) {
+  .container {
+    div {
+      height: 6vh;
+      font-size: 3vw;
+    }
+    span {
+      font-size: 3vw;
+    }
+  }
+}
