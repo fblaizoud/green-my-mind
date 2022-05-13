@@ -1,5 +1,7 @@
 .choicepage {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100vw;
   height: calc(100vh - 100px);
 
@@ -24,8 +26,8 @@
     text-shadow: 4px 4px 8px #000000;
 
     img {
-      height: 100%;
-      width: 100%;
+      height: calc(100vh - 100px);
+      width: 50vw;
       object-fit: cover;
     }
 
