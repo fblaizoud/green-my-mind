@@ -39,20 +39,19 @@
 @media all and (max-width: 1000px) {
   .navbarwithlink {
     img {
-      transform: scale(.7);
+      transform: scale(0.7);
     }
     &__links {
       display: flex;
       font-weight: 700;
       font-size: 6vw;
     }
-    }
   }
+}
 
-  // ! Responsivness
+// ! Responsivness
 @media all and (max-width: 800px) {
   .navbarwithlink {
-
     &__links {
       display: none;
     }
