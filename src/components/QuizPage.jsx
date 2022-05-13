@@ -13,15 +13,15 @@ const QuizPage = () => {
 
   useEffect(() => {
     if ((transportScore + foodScore + housingScore + clothingScore) / 4 >= 75) {
-      setAdvice("Congratulations ! Your are a Green Expert ! 🥳");
+      setAdvice("Congratulations! You're a Green Expert! 🥳");
     } else if (
       (transportScore + foodScore + housingScore + clothingScore) / 4 >=
       50
     ) {
-      setAdvice("Not bad ! But you can do better, we know it ! 🙃");
+      setAdvice("Not bad! But you can do better, we know it! 🙃");
     } else {
       setAdvice(
-        "You are such not Green ! Go get some colors on the Greenfo Page above ! 😵"
+        "You are soooo not Green! Go get some colors on the Greenfo Page above! 😵"
       );
     }
   }, [transportScore, foodScore, housingScore, clothingScore]);
