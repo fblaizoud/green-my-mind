@@ -42,14 +42,14 @@
 
 // ! Responsivness
 @media all and (max-width: 600px) {
-  .choicepage {
-    flex-wrap: wrap;
-    width: 100vw;
+  .choicepage {   
     height: calc(100vh - 100px);
+      flex-direction: column;
+      justify-content: flex-start;
     &__section {
       img {
-        height: 100%;
-        width: 100%;
+        height: calc(50vh - 50px);
+        width: 100vw;
         object-fit: cover;
       }
       &__links {
