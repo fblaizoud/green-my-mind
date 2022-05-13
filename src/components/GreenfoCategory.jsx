@@ -25,16 +25,16 @@ const GreenfoCategory = () => {
               97% of transports depend on fossil energy
             </div>
             <div className="graph2">
-              <Number nbr="97" id="2" /> %
+              <Number nbr="97" id="2" />%
             </div>
             <div className="graph3">
-              <Number nbr="80" id="3" /> %
+              <Number nbr="80" id="3" />%
             </div>
             <div className="text3">
               10yr+ old vehicles represent 80% of the world&apos;s car pollution
             </div>
             <div className="graph4">
-              <Number nbr="1" id="4" /> %
+              <Number nbr="1" id="4" />%
             </div>
             <div className="text4">
               Only 1% of vehicles in France are electric
@@ -47,23 +47,23 @@ const GreenfoCategory = () => {
               80% of the world&apos;s deforestation is caused by agriculture
             </div>
             <div className="graph1">
-              <Number nbr="80" id="1" /> %
+              <Number nbr="80" id="1" /> <span>%</span>
             </div>
             <div className="text2">
               Meat consumption will be increased by 75% in 2050
             </div>
             <div className="graph2">
               {" "}
-              <Number nbr="75" id="2" /> %
+              <Number nbr="75" id="2" /> <span>%</span>
             </div>
             <div className="graph3">
-              <Number nbr="25" id="3" /> %
+              <Number nbr="25" id="3" /> <span>%</span>
             </div>
             <div className="text3">
               Food is responsible for 25% of the French carbon footprint
             </div>
             <div className="graph4">
-              <Number nbr="33" id="4" /> %
+              <Number nbr="33" id="4" /> <span>%</span>
             </div>
             <div className="text4">
               33% of the world&apos;s surface is used for agriculture

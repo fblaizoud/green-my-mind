@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   height: 100px;
-  width: 100vw;
+  width: 100%;
   background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0.2) 0%,
@@ -32,5 +32,28 @@
     text-align: center;
     color: #ffffff;
     text-shadow: 4px 4px 8px #000000;
+  }
+}
+
+// ! Responsivness
+
+@media all and (max-width: 1250px) {
+  .navbarwithlink {
+    &__links {
+      gap: 40px;
+      font-size: 30px;
+    }
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .navbarwithlink {
+    justify-content: center;
+    &__logo {
+      transform: scale(0.7);
+    }
+    &__links {
+      display: none;
+    }
   }
 }

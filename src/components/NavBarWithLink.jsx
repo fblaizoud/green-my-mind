@@ -4,7 +4,7 @@ import Proptypes from "prop-types";
 const NavBarWithLink = ({ title }) => {
   return (
     <div className="navbarwithlink">
-      <div>
+      <div className="navbarwithlink__logo">
         <Link to="/">
           <img src="/assets/logo_green-my-mind.svg" alt="logo" />
         </Link>
