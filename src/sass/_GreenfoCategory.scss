@@ -1,120 +1,174 @@
-.greenfo_transport {
+#greenfocat {
+  position: relative;
   width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   height: calc(100vh - 100px);
-  background-color: #e8f7e6;
-  opacity: 0.3;
-  background-size: 40px 40px;
-  background-image: repeating-linear-gradient(
-    45deg,
-    #54f745 0,
-    #54f745 4px,
-    #e8f7e6 0,
-    #e8f7e6 50%
-  );
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+  }
+  h1 {
+    position: relative;
+    font-family: "Amatic SC";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 6px black;
+    text-decoration: underline solid #0fba00 12%;
+  }
+}
+
+.greenfo_transport {
+  &::before {
+    background-color: #e8f7e6;
+    opacity: 0.3;
+    background-size: 40px 40px;
+    background-image: repeating-linear-gradient(
+      45deg,
+      #54f745 0,
+      #54f745 4px,
+      #e8f7e6 0,
+      #e8f7e6 50%
+    );
+  }
 }
 
 .greenfo_housing {
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: calc(100vh - 100px);
-  background-color: #e8f7e6;
-  opacity: 0.3;
-  background: linear-gradient(135deg, #54f74555 25%, transparent 25%) -40px 0/
-      80px 80px,
-    linear-gradient(225deg, #54f745 25%, transparent 25%) -40px 0/ 80px 80px,
-    linear-gradient(315deg, #54f74555 25%, transparent 25%) 0px 0/ 80px 80px,
-    linear-gradient(45deg, #54f745 25%, #e8f7e6 25%) 0px 0/ 80px 80px;
+  &::before {
+    background-color: #e8f7e6;
+    opacity: 0.3;
+    background: linear-gradient(135deg, #54f74555 25%, transparent 25%) -40px 0/
+        80px 80px,
+      linear-gradient(225deg, #54f745 25%, transparent 25%) -40px 0/ 80px 80px,
+      linear-gradient(315deg, #54f74555 25%, transparent 25%) 0px 0/ 80px 80px,
+      linear-gradient(45deg, #54f745 25%, #e8f7e6 25%) 0px 0/ 80px 80px;
+  }
 }
 
 .greenfo_food {
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: calc(100vh - 100px);
-  background-color: #e8f7e6;
-  opacity: 0.3;
-  background-image: repeating-radial-gradient(
-      circle at 0 0,
-      transparent 0,
-      #e8f7e6 40px
-    ),
-    repeating-linear-gradient(#54f74555, #54f745);
+  &::before {
+    background-color: #e8f7e6;
+    opacity: 0.3;
+    background-image: repeating-radial-gradient(
+        circle at 0 0,
+        transparent 0,
+        #e8f7e6 40px
+      ),
+      repeating-linear-gradient(#54f74555, #54f745);
+  }
 }
 
 .greenfo_clothing {
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: calc(100vh - 100px);
-  background-color: #e8f7e6;
-  opacity: 0.3;
-  background-image: linear-gradient(#54f745 8px, transparent 8px),
-    linear-gradient(90deg, #54f745 8px, transparent 8px),
-    linear-gradient(#54f745 4px, transparent 4px),
-    linear-gradient(90deg, #54f745 4px, #e8f7e6 4px);
-  background-size: 200px 200px, 200px 200px, 40px 40px, 40px 40px;
-  background-position: -8px -8px, -8px -8px, -4px -4px, -4px -4px;
+  &::before {
+    background-color: #e8f7e6;
+    opacity: 0.3;
+    background-image: linear-gradient(#54f745 8px, transparent 8px),
+      linear-gradient(90deg, #54f745 8px, transparent 8px),
+      linear-gradient(#54f745 4px, transparent 4px),
+      linear-gradient(90deg, #54f745 4px, #e8f7e6 4px);
+    background-size: 200px 200px, 200px 200px, 40px 40px, 40px 40px;
+    background-position: -8px -8px, -8px -8px, -4px -4px, -4px -4px;
+  }
 }
 
 .container {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 1fr);
   grid-column-gap: 20px;
   grid-row-gap: 20px;
-  width: 80%;
-  height: 80%;
+  width: 75%;
+  height: 75%;
+  padding-bottom: 6vh;
+  font-size: 1rem;
+  line-height: 2rem;
+  letter-spacing: 0.1rem;
+  color: rgb(0, 0, 0);
+  font-family: "Poppins";
 }
 
 .text1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
   grid-area: 1 / 1 / 2 / 4;
-  opacity: 1;
-  background-color: white;
-  color: black;
+  padding: 10px;
+  background-color: rgb(147, 207, 124);
 }
 .graph1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   grid-area: 2 / 1 / 4 / 4;
   opacity: 1;
-  background-color: white;
+  background-color: rgb(147, 207, 124);
+  font-size: 4rem;
 }
 .text2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: end;
+  justify-content: center;
   grid-area: 1 / 4 / 4 / 5;
-  opacity: 1;
-  background-color: white;
+  padding: 10px;
+  background-color: rgb(180, 230, 160);
 }
 .graph2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   grid-area: 1 / 5 / 4 / 7;
-  opacity: 1;
-  background-color: white;
+  background-color: rgb(180, 230, 160);
+  font-size: 4rem;
 }
 .graph3 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   grid-area: 4 / 1 / 7 / 3;
-  opacity: 1;
-  background-color: white;
+  background-color: rgb(229, 244, 223);
+  font-size: 4rem;
 }
 .text3 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: start;
+  justify-content: center;
   grid-area: 4 / 3 / 7 / 4;
-  opacity: 1;
-  background-color: white;
+  padding: 10px;
+  background-color: rgb(229, 244, 223);
 }
 .graph4 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   grid-area: 4 / 4 / 6 / 7;
-  opacity: 1;
-  background-color: white;
+  background-color: rgb(216, 246, 204);
+  font-size: 4rem;
 }
 .text4 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   grid-area: 6 / 4 / 7 / 7;
-  opacity: 1;
-  background-color: white;
+  padding: 10px;
+  background-color: rgb(216, 246, 204);
 }

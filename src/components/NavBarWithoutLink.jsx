@@ -4,7 +4,7 @@ const NavBarWithoutLink = () => {
   return (
     <div className="navbarwithoutlink">
       <Link to="/">
-        <img src="../../public/assets/logo_green-my-mind.svg" alt="logo" />
+        <img src="./assets/logo_green-my-mind.svg" alt="logo" />
       </Link>
     </div>
   );
