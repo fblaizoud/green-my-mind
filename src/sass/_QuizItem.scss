@@ -5,6 +5,7 @@
   align-items: center;
   gap: 2rem;
   width: 80rem;
+  min-height: 120vh;
   &__question {
     display: flex;
     flex-direction: column;
@@ -22,6 +23,9 @@
     padding: 0rem;
     backdrop-filter: blur(2px);
     box-shadow: 0px 0px 20px 10px black;
+    @media screen and (max-width: 1000px) {
+      width: 60%;
+    }
   }
   &__answers {
     display: flex;
@@ -29,6 +33,11 @@
     align-items: center;
     gap: 2rem;
     width: 100%;
+    @media screen and (max-width: 1000px) {
+      flex-direction: column;
+      width: 80%;
+      gap: 1rem;
+    }
     &__button {
       font-family: "Amatic SC";
       color: aliceblue;
@@ -38,12 +47,16 @@
       border: 2px solid aliceblue;
       border-radius: 15px;
       background-color: rgba(0, 100, 0, 0.25);
-      padding: 0rem;
       backdrop-filter: blur(2px);
       box-shadow: 0px 0px 20px 10px black;
       cursor: pointer;
       &:hover {
         transform: scale(1.05);
+      }
+      @media screen and (max-width: 1000px) {
+        width: 60%;
+        font-size: 2.5rem;
+        height: 6.5rem;
       }
       Link {
         color: aliceblue;
