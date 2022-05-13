@@ -1,3 +1,6 @@
+/* eslint-disable no-plusplus */
+/* eslint-disable func-names */
+
 import { useEffect } from "react";
 import Proptypes from "prop-types";
 
@@ -22,8 +25,6 @@ const Number = ({ nbr, id }) => {
       return a - b;
     });
 
-    console.log(randomNumbers.length);
-
     let x = 0;
     const interval = setInterval(function () {
       number.innerHTML = randomNumbers.shift();
@@ -36,10 +37,9 @@ const Number = ({ nbr, id }) => {
   return <div id={id}>0</div>;
 };
 
-NavBarWithLink.propTypes = {
-    nbr: Proptypes.number.isRequired,
-    id: Proptypes.string.isRequired,
-  };
-  
+Number.propTypes = {
+  nbr: Proptypes.number.isRequired,
+  id: Proptypes.string.isRequired,
+};
 
 export default Number;
