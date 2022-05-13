@@ -22,7 +22,7 @@
     font-size: 70px;
     color: rgb(255, 255, 255);
     text-shadow: 3px 3px 6px black;
-    text-decoration: underline solid #0fba00 12%; 
+    text-decoration: underline solid #0fba00 12%;
   }
 }
 
@@ -91,7 +91,7 @@
   padding-bottom: 6vh;
   font-size: 1rem;
   line-height: 2rem;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   color: rgb(0, 0, 0);
   font-family: "Poppins";
 }
@@ -120,7 +120,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  text-align:end;
+  text-align: end;
   justify-content: center;
   grid-area: 1 / 4 / 4 / 5;
   padding: 10px;
