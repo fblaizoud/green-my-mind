@@ -5,7 +5,7 @@ const NavBarWithLink = () => {
     <div className="navbarwithlink">
       <div>
         <Link to="/">
-          <img src="../../public/assets/logo_green-my-mind.svg" alt="logo" />
+          <img src="./assets/logo_green-my-mind.svg" alt="logo" />
         </Link>
       </div>
       <div className="navbarwithlink__links">

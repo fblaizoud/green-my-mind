@@ -8,13 +8,13 @@ const ChoicePage = () => {
       <div className="choicepage">
         <Link to="/greenfo">
           <div className="choicepage__section">
-            <img src="/assets/forest.jpg" alt="forest" />
+            <img src="./assets/forest.jpg" alt="forest" />
             <div className="choicepage__section__links">GREENFO</div>
           </div>
         </Link>
         <Link to="/quiz">
           <div className="choicepage__section">
-            <img src="/assets/thinking.jpg" alt="thinking" />
+            <img src="./assets/thinking.jpg" alt="thinking" />
             <div className="choicepage__section__links">QUIZZ</div>
           </div>
         </Link>
