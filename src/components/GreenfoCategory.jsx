@@ -4,12 +4,13 @@ import NavBarWithLink from "./NavBarWithLink";
 
 const GreenfoCategory = () => {
   const { title } = useParams();
+  const titleCapitalized = title.charAt(0).toUpperCase() + title.slice(1)
 
   return (
     <>
       <NavBarWithLink />
-      <div className={`greenfo_${title}`}>
-        <h1>{title}</h1>
+      <div className={`greenfo_${title}`} id="greenfocat">
+        <h1>{titleCapitalized}</h1>
 
         {title === "transport" && (
           <div className="container">
