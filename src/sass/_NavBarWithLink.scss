@@ -38,7 +38,7 @@
 // ! Responsivness
 @media all and (max-width: 1000px) {
   .navbarwithlink {
-    img {
+    &__logo {
       transform: scale(0.7);
     }
     &__links {
@@ -52,6 +52,7 @@
 // ! Responsivness
 @media all and (max-width: 800px) {
   .navbarwithlink {
+    justify-content: center;
     &__links {
       display: none;
     }
