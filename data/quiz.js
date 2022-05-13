@@ -86,7 +86,7 @@ const quiz = [
       },
       {
         id: 2,
-        answer: "No",
+        answer: "Sometimes",
       },
       {
         id: 3,
