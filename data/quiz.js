@@ -86,7 +86,7 @@ const quiz = [
       },
       {
         id: 2,
-        answer: "No",
+        answer: "Sometimes",
       },
       {
         id: 3,
@@ -166,7 +166,7 @@ const quiz = [
       },
       {
         id: 3,
-        answer: "Both",
+        answer: "Bottled, with a side of whisky",
       },
     ],
   },
@@ -181,7 +181,7 @@ const quiz = [
       },
       {
         id: 2,
-        answer: "0 - 20km",
+        answer: "0-20km",
       },
       {
         id: 3,
@@ -250,7 +250,7 @@ const quiz = [
   {
     id: 14,
     category: "housing",
-    question: "Which material is your house built with",
+    question: "Which material is your house built with?",
     answers: [
       {
         id: 1,
@@ -269,7 +269,7 @@ const quiz = [
   {
     id: 15,
     category: "clothing",
-    question: "How do you dispose of your worn out clothes?",
+    question: "What do you do with your worn-out clothes?",
     answers: [
       {
         id: 1,
@@ -296,11 +296,11 @@ const quiz = [
       },
       {
         id: 2,
-        answer: "Warm wool for winter and nylon for spring",
+        answer: "Warm wool for winter, nylon for spring",
       },
       {
         id: 3,
-        answer: "Whatever feels good on my skin",
+        answer: "Whatever feels good on my skin, dead animals welcome",
       },
     ],
   },
