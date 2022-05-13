@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import NavBarWithLink from "./NavBarWithLink";
 import quiz from "../../data/quiz.js";
 import QuizItem from "./QuizItem";
@@ -11,6 +12,14 @@ const QuizPage = () => {
   const [clothingScore, setClothingScore] = useState(0);
   const [advice, setAdvice] = useState("");
 
+  const reset = () => {
+    setTransportScore(0);
+    setFoodScore(0);
+    setHousingScore(0);
+    setClothingScore(0);
+    setCurrentQuestion(0);
+  };
+
   useEffect(() => {
     if ((transportScore + foodScore + housingScore + clothingScore) / 4 >= 75) {
       setAdvice("Congratulations! You're a Green Expert! 🥳");
@@ -21,12 +30,10 @@ const QuizPage = () => {
       setAdvice("Not bad! But you can do better, we know it! 🙃");
     } else {
       setAdvice(
-        "You are soooo not Green! Go get some colors on the Greenfo Page above! 😵"
+        "You are soooo not Green! Go get some colors on the Greenfo Page ! 😵"
       );
     }
   }, [transportScore, foodScore, housingScore, clothingScore]);
-
-  console.log(advice);
 
   return (
     <>
@@ -88,6 +95,16 @@ const QuizPage = () => {
                 </div>
                 <div className="quizPage__result__details__advice">
                   <p>{advice}</p>
+                  <div className="quizPage__result__details__advice__buttons">
+                    <Link to="/greenfo">
+                      <button type="button">Get Green !</button>
+                    </Link>
+                    <Link to="/quiz">
+                      <button type="button" onClick={reset}>
+                        Reset Quiz
+                      </button>
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
