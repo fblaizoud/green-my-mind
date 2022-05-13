@@ -24,7 +24,7 @@ const GreenfoCategory = () => {
             <div className="graph2"> 97% </div>
             <div className="graph3">80% </div>
             <div className="text3">
-              10yr+ old vehicles represent 80% of the worlds car pollution
+              10yr+ old vehicles represent 80% of the world&apos;s car pollution
             </div>
             <div className="graph4"> 1% </div>
             <div className="text4">
@@ -35,7 +35,7 @@ const GreenfoCategory = () => {
         {title === "food" && (
           <div className="container">
             <div className="text1">
-              80% of the world's deforestation is caused by agriculture
+              80% of the world&apos;s deforestation is caused by agriculture
             </div>
             <div className="graph1">80%</div>
             <div className="text2">
@@ -48,7 +48,7 @@ const GreenfoCategory = () => {
             </div>
             <div className="graph4"> 33% </div>
             <div className="text4">
-              33% of the World's surface is used for agriculture
+              33% of the world&apos;s surface is used for agriculture
             </div>
           </div>
         )}
@@ -78,13 +78,13 @@ const GreenfoCategory = () => {
           <div className="container">
             <div className="text1">
               The making of a pair of jeans takes 7500 litres of water (i.e. a
-              human being's water consumption for 13 years).
+              human being&apos;s water consumption for 13 years).
             </div>
             <div className="graph1">7500</div>
             <div className="text2">
-              Each kilo of upcycled clothing saves 16 600 litres of water.
+              Each kilo of upcycled clothing saves 16600 litres of water.
             </div>
-            <div className="graph2"> 16000 </div>
+            <div className="graph2"> 16600 </div>
             <div className="graph3">70% </div>
             <div className="text3">70% of our wardrobe is never worn.</div>
             <div className="graph4"> 1 second </div>
