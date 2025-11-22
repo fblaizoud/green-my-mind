@@ -1,6 +1,6 @@
 ## Concept
 
-Voici un template déjà configuré pour vos projets front-end.
+Voici un template déjà configuré pour vos projets front-ends.
 
 ## Setup & Use
 
